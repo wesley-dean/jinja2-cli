@@ -1,0 +1,32 @@
+---
+# don't use Mega-Linter to test the reports Mega-Linter created
+ADDITIONAL_EXCLUDED_DIRECTORIES: [report]
+
+# don't scan files listed in .gitignore (e.g., node_modules)
+IGNORE_GITIGNORED_FILES: true
+
+# don't attempt to apply fixes at this time
+APPLY_FIXES: none
+
+# please don't spell check everything...
+DISABLE: [SPELL, COPYPASTE]
+
+DISABLE_LINTERS:
+  - YAML_PRETTIER
+
+# only scan new / updated files, not everything
+VALIDATE_ALL_CODEBASE: false
+
+# don't print the alpaca -- it's cute, but we don't need it in the logs
+PRINT_ALPACA: false
+
+# don't fail on finding (yet)
+DISABLE_ERRORS: true
+
+# let actionlint deal with workflows (SchemaStore isn't very
+# accurate at picking up the schemae based on arbitrary
+# filenames like, "deploy.yml"
+YAML_V8R_FILTER_REGEX_EXCLUDE: "[.]github/workflows/"
+
+# don't blow up local linting of the Jenkinsfile
+GROOVY_NPM_GROOVY_LINT_ARGUMENTS: '--no-insight'
