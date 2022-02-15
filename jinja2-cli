@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE_NAME="${IMAGE_NAME:-docker-jinja2}"
+IMAGE_NAME="${IMAGE_NAME:-wesleydean/docker-jinja2}"
 
 directory="${directory:-$(pwd)}"
 user="${user:-$(id -u)}"
