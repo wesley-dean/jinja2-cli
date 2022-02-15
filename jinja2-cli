@@ -1,0 +1,5 @@
+#!/bin/sh
+
+IMAGE_NAME="${IMAGE_NAME:-docker-jinja2}"
+
+docker run --rm -it -v "$(pwd):$(pwd)" -w "$(pwd)" -u "$(id -u)" "${IMAGE_NAME}" "$@"
