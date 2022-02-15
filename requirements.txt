@@ -1,5 +1,5 @@
 PyYAML==6.0
-xml2dict==0.12.0
+xmltodict==0.12.0
 jinja2==3.0.3
 jinja2-cli==0.8.1
 jinja2-cli[yaml]
