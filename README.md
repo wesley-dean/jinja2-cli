@@ -50,7 +50,8 @@ may include files in the container, CLI options, etc..
 ./jinja2-cli template.j2.txt data.json --format=json
 ```
 
-[Jinja2-cli Usage](https://raw.githubusercontent.com/mattrobenolt/jinja2-cli/main/README.md#Usage)
+Additional information may be found on the jinja2-cli's README.md:
+[Jinja2-cli Usage](https://github.com/mattrobenolt/jinja2-cli/main/README.md#Usage)
 
 ### Data Format Support
 
