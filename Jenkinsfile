@@ -82,13 +82,13 @@ pipeline {
             agent {
                 docker {
                     image 'returntocorp/semgrep'
-                    args '--entrypoint="" --config auto'
+                    args '--entrypoint=""'
                     reuseNode true
                 }
             }
 
             steps {
-                sh "semgrep --config auto --error '${WORKSPACE}'"
+                sh "semgrep --config auto '${WORKSPACE}'"
             }
         }
 
