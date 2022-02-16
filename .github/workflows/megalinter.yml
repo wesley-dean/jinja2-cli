@@ -6,8 +6,11 @@ name: MegaLinter
 # yamllint disable-line rule:truthy
 on:
   # Pull Requests to main
-  pull_request:
+  pull:
     branches: [master, main]
+  push:
+    branches: [master, main]
+  workflow_dispatch:
 
 # Comment env block if you do not want to apply fixes
 env:
