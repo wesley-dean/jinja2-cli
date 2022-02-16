@@ -39,6 +39,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags:
-            - ghcr.io/${{ secrets.GHCR_USERNAME }}/${{ github.event.repository.name }}:latest
-            - ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest
+          tags: |
+            ghcr.io/${{ secrets.GHCR_USERNAME }}/${{ github.event.repository.name }}:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest
