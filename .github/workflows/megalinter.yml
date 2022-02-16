@@ -6,7 +6,7 @@ name: MegaLinter
 # yamllint disable-line rule:truthy
 on:
   # Pull Requests to main
-  pull:
+  pull_request:
     branches: [master, main]
   push:
     branches: [master, main]
