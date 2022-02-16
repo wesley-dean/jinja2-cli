@@ -1,4 +1,5 @@
 ---
+
 name: Semgrep
 
 # yamllint disable-line rule:truthy
@@ -6,9 +7,9 @@ on:
   # Scan changed files in PRs, block on new issues only
   # (existing issues ignored)
   pull_request:
-    branches: [master,main]
+    branches: [master, main]
   push:
-    branches: [master,main]
+    branches: [master, main]
   workflow_dispatch:
 
   # Scan all files on branches, block on any issues
