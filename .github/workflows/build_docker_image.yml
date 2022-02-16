@@ -15,9 +15,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Get Project Name
-        run: echo ::set-env name=PROJECT_NAME::$(echo ${GITHUB_REPOSITORY#*/})
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
@@ -35,4 +32,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ github.repository_owner }}/${{ env.PROJECT_NAME}}:latest
+          tags: ${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
