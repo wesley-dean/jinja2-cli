@@ -42,3 +42,17 @@ jobs:
           tags: |
             ghcr.io/${{ secrets.GHCR_USERNAME }}/${{ github.event.repository.name }}:latest
             registry.hub.docker.com/${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest
+
+      - name: Run Snyk to check Docker image for vulnerabilities
+        continue-on-error: true
+        uses: snyk/actions/docker@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          image: ghcr.io/${{ secrets.GHCR_USERNAME }}/${{ github.event.repository.name }}:latest
+          args: --file=Dockerfile
+      - name: Upload result to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: snyk.sarif
+
