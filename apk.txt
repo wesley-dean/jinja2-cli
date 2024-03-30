@@ -1,4 +1,4 @@
-python3==3.9.7-r4
+python3=~3
 
 # pip
-py3-pip==20.3.4-r1
+py3-pip=~20
