@@ -37,7 +37,7 @@ jobs:
           registry: registry.hub.docker.com
 
       - name: Build and push
-        uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a # pin@v2
+        uses: docker/build-push-action@2cdde995de11925a030ce8070c3d77a52ffcf1c0 # pin@v2
         with:
           push: true
           tags: |
