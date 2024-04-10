@@ -1,1 +1,4 @@
 report/
+megalinter-report/
+*~
+

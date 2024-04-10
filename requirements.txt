@@ -1,7 +1,0 @@
-PyYAML==6.0.1
-xmltodict==0.13.0
-jinja2==3.1.3
-jinja2-cli==0.8.2
-jinja2-cli[yaml]
-jinja2-cli[toml]
-jinja2-cli[xml]
