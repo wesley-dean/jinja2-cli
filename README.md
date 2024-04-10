@@ -2,8 +2,6 @@
 
 [![Build](https://github.com/wesley-dean/jinja2-cli/actions/workflows/build_docker_image.yml/badge.svg)](https://github.com/wesley-dean/jinja2-cli/actions/workflows/build_docker_image.yml)
 [![MegaLinter](https://github.com/wesley-dean/jinja2-cli/actions/workflows/megalinter.yml/badge.svg)](https://github.com/wesley-dean/jinja2-cli/actions/workflows/megalinter.yml)
-[![Semgrep](https://github.com/wesley-dean/jinja2-cli/actions/workflows/semgrep.yml/badge.svg)](https://github.com/wesley-dean/jinja2-cli/actions/workflows/semgrep.yml)
-[![Snyk Scan](https://github.com/wesley-dean/jinja2-cli/actions/workflows/snyk.yml/badge.svg)](https://github.com/wesley-dean/jinja2-cli/actions/workflows/snyk.yml)
 
 This is containerized jinja2-cli built on top of Alpine Linux.
 
