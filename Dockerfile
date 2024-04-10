@@ -14,6 +14,8 @@ RUN apk add --no-cache \
 && rm -rf /var/cache/apk/* \
 && ( getent passwd "${RUNNER}" || adduser -D "${RUNNER}" )
 
+HEALTHCHECK NONE
+
 USER "${RUNNER}"
 ENTRYPOINT ["jinja2"]
 
