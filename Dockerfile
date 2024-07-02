@@ -1,10 +1,10 @@
-FROM python:3-slim
+FROM python:3-alpine
 
 ENV RUNNER="runner"
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
-RUN ( getent passwd "${RUNNER}" || useradd "${RUNNER}" )
+RUN ( getent passwd "${RUNNER}" || adduser -D "${RUNNER}" )
 
 COPY requirements.txt /
 RUN pip3 install -r requirements.txt
