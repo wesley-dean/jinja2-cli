@@ -83,7 +83,7 @@ jobs:
           ) >> $GITHUB_OUTPUT
 
       - name: Login to GitHub Packages
-        uses: docker/login-action@1f36f5b7a2d2f7bfd524795fc966e6d88c37baa9 # pin@v2
+        uses: docker/login-action@06895751d15a223ec091bea144ad5c7f50d228d0 # pin@v2
         if: ${{ steps.customvars.outputs.ghcr == 'true' }}
         with:
           username: ${{ secrets.GHCR_USERNAME }}
@@ -91,7 +91,7 @@ jobs:
           registry: ghcr.io
 
       - name: Login to Dockerhub
-        uses: docker/login-action@1f36f5b7a2d2f7bfd524795fc966e6d88c37baa9 # pin@v2
+        uses: docker/login-action@06895751d15a223ec091bea144ad5c7f50d228d0 # pin@v2
         if: ${{ steps.customvars.outputs.dockerhub == 'true' }}
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -99,7 +99,7 @@ jobs:
           registry: registry.hub.docker.com
 
       - name: Login to Quay
-        uses: docker/login-action@1f36f5b7a2d2f7bfd524795fc966e6d88c37baa9 # pin@v2
+        uses: docker/login-action@06895751d15a223ec091bea144ad5c7f50d228d0 # pin@v2
         if: ${{ steps.customvars.outputs.quay == 'true' }}
         with:
           username: ${{ secrets.QUAY_USERNAME }}
