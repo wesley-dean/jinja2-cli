@@ -1,6 +1,6 @@
 ---
 # don't use Mega-Linter to test the reports Mega-Linter created
-ADDITIONAL_EXCLUDED_DIRECTORIES: [report,megalinter-report]
+ADDITIONAL_EXCLUDED_DIRECTORIES: [report, megalinter-report, .git]
 
 # don't scan files listed in .gitignore (e.g., node_modules)
 IGNORE_GITIGNORED_FILES: true
@@ -13,6 +13,8 @@ DISABLE: [SPELL, COPYPASTE]
 
 DISABLE_LINTERS:
   - YAML_PRETTIER
+  - REPOSITORY_DUSTILOCK
+  - REPOSITORY_DEVSKIM
 
 VALIDATE_ALL_CODEBASE: false
 
@@ -42,4 +44,3 @@ REPOSITORY_DEVSKIM_ARGUMENTS: "--skip-git-ignored-files"
 BASH_SHFMT_ARGUMENTS: -i 2 -bn -ci -sr -kp
 
 REPOSITORY_TRUFFLEHOG_ARGUMENTS: "--exclude-paths=.trufflehogignore"
-

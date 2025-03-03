@@ -1,0 +1,6 @@
+PyYAML>=6
+toml>=0
+xmltodict>=0
+hjson>=3
+jinja2-cli>=0
+
