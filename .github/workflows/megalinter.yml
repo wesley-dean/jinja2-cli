@@ -38,7 +38,7 @@ jobs:
         id: ml
         # You can override MegaLinter flavor used to have faster performances
         # More info at https://megalinter.github.io/flavors/
-        uses: megalinter/megalinter/flavors/ci_light@ec124f7998718d79379a3c5b39f5359952baf21d # pin@v7
+        uses: megalinter/megalinter/flavors/ci_light@146333030da68e2e58c6ff826633824fabe01eaf # pin@v7
         env:
           # All available variables are described in documentation
           # https://megalinter.github.io/configuration/
@@ -50,7 +50,7 @@ jobs:
           # Upload MegaLinter artifacts
       - name: Archive production artifacts
         if: ${{ success() }} || ${{ failure() }}
-        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # pin@v2
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pin@v2
         with:
           name: MegaLinter reports
           path: |
