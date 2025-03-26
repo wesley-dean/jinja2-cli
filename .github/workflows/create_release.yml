@@ -38,7 +38,7 @@ jobs:
 
         with:
           token: "${{ env.GITHUB_TOKEN }}"
-          release_name: "${{ env.VERSION }}"
+          name: "${{ env.VERSION }}"
           body: "${{ env.RELEASE_NOTES }}"
           tag_name: "${{ env.VERSION }}"
           draft: false
