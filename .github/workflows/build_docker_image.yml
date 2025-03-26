@@ -29,7 +29,7 @@ jobs:
           ) >> "$GITHUB_OUTPUT"
 
       - name: Build and Publish Image
-        uses: wesley-dean/publish_container@v0.0.7
+        uses: wesley-dean/publish_container@v0.0.8
         with:
           dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
           dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
