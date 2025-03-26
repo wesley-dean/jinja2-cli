@@ -33,3 +33,5 @@ jobs:
         with:
           dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
           dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
+          github_ref: ${{ github.ref }}
+          repository_name: ${{ github.event.repository.name }}
