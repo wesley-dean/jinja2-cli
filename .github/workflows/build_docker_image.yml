@@ -32,6 +32,6 @@ jobs:
         uses: wesley-dean/publish_container@v0.0.10
         with:
           dockerhub_username: ${{ secrets.DOCKERHUB_USERNAME }}
-          dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
+          dockerhub_token: ${{ secrets.DOCKERHUB_PAT }}
           github_ref: ${{ github.ref }}
           repository_name: ${{ github.event.repository.name }}
