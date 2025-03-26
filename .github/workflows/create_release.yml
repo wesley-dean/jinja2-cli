@@ -25,7 +25,7 @@ jobs:
         run: |
           (
             echo -n "TAG="
-            sed -Ene 's/^.*\bjinja2-cli==([0-9.]+).*$/\1/p' < requirements.txt
+            sed -Ene 's/^.*\bjinja2-cli==([0-9.]+).*$/v\1/p' < requirements.txt
           ) >> "$GITHUB_OUTPUT"
 
       - name: Create release
