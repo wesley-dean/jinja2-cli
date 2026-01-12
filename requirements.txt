@@ -12,9 +12,9 @@ jinja2==3.1.6 \
     --hash=sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d \
     --hash=sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67
     # via jinja2-cli
-jinja2-cli==0.8.2 \
-    --hash=sha256:a16bb1454111128e206f568c95938cdef5b5a139929378f72bb8cf6179e18e50 \
-    --hash=sha256:b91715c79496beaddad790171e7258a87db21c1a0b6d2b15bca3ba44b74aac5d
+jinja2-cli==1.0.0 \
+    --hash=sha256:003da79bdddce82a186d98687c77bdecacdb1a5d40d1962df500003d4f4ad03c \
+    --hash=sha256:e7dadec3f908602669b1518245c90a0c08bceecc2c40d35011e3bcb54bcdf52f
     # via -r requirements.in
 markupsafe==3.0.2 \
     --hash=sha256:0bff5e0ae4ef2e1ae4fdf2dfd5b76c75e5c2fa4132d05fc1b0dabcd20c7e28c4 \
