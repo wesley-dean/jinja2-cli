@@ -38,7 +38,7 @@ jobs:
         id: ml
         # You can override MegaLinter flavor used to have faster performances
         # More info at https://megalinter.github.io/flavors/
-        uses: megalinter/megalinter/flavors/ci_light@8fbdead70d1409964ab3d5afa885e18ee85388bb # pin@v7
+        uses: megalinter/megalinter/flavors/ci_light@0e3ce9b9c8c10effb9b269509cc47ca17cae31c7 # pin@v7
         env:
           # All available variables are described in documentation
           # https://megalinter.github.io/configuration/
