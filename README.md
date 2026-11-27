@@ -73,3 +73,18 @@ The containerized application supports the following data formats:
 ```bash
 docker build -t tagname .
 ```
+
+## Dependency maintenance
+
+Routine GitHub Actions and pip dependency version updates are managed by the
+centrally hosted Jenkins Renovate service, enrolled through root
+`renovate.json`.  The existing Dependabot ecosystem entries retain their
+settings but set `open-pull-requests-limit: 0` to disable scheduled routine
+version PRs.  GitHub vulnerability alerts and Dependabot security updates
+remain separate, and the existing Dependabot-only non-major auto-merge
+workflow is retained for security PRs.  Renovate changes remain subject to
+applicable required checks and human review.
+
+Existing immutable GitHub Actions SHAs were preserved.  Where exact upstream
+tags could be verified, their version annotations were corrected; other
+references remain unchanged pending separate provenance review.
